@@ -1,4 +1,4 @@
-# Full-Stack Employee Management System
+# Full-Stack Product Management System
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -12,14 +12,12 @@
 
 ## Introduction
 
-This is a Full-Stack Employee Management System that allows users to manage companies and their employees. The application is built using **React** for the frontend and **Express.js** for the backend, with a **MongoDB** database for storing company and employee data. The system supports authentication and role-based access control (RBAC) for securing sensitive operations like creating, updating, or deleting records.
+This is a Full-Stack Product Management System that allows users to manage products. The application is built using **React** for the frontend and **Express.js** for the backend, with a **MongoDB** database for storing product data. The system supports authentication and role-based access control (RBAC) for securing sensitive operations like creating, updating, or deleting records.
 
 ## Features
 
 - **User Authentication**: Secure login and registration with JWT.
-- **Company Management**: Create, update, and delete company records.
-- **Employee Management**: Add, edit, and remove employees associated with companies.
-- **Profile Management**: Upload employee profile pictures.
+- **Product Management**: Create, update, and delete product records.
 - **Role-Based Access Control**: Restrict access to certain operations based on user roles (e.g., admin).
 - **Responsive Design**: UI adapts for desktop, tablet, and mobile devices.
 
@@ -35,7 +33,7 @@ This is a Full-Stack Employee Management System that allows users to manage comp
 ### Backend
 - **Node.js**: JavaScript runtime for the backend.
 - **Express.js**: A web framework for building the API.
-- **MongoDB**: NoSQL database for storing company and employee data.
+- **MongoDB**: NoSQL database for storing product data.
 - **Mongoose**: ODM for MongoDB.
 - **JWT**: Used for secure authentication.
 - **bcrypt.js**: For hashing passwords.
@@ -88,6 +86,6 @@ Ensure that you have the following software installed:
 |--------|------------------------|-----------------------------------|
 | POST   | `/api/create/product`       | Create a new product              |
 | GET    | `/api/products`       | Retrieve all companies            |
-| GET    | `/api/companies/{id}`  | Retrieve a specific company       |
+| GET    | `/api/product/{id}`  | Retrieve a specific product       |
 | PUT    | `/api/edit/:id`  | Update a specific product        |
 | DELETE | `/api/delete/product/:id`  | Delete a specific product        |
