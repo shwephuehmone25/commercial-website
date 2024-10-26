@@ -16,7 +16,7 @@ const AuthForm = ({ isLogin }) => {
     username: "",
     email: "",
     password: "",
-    role: "", // New role field for registration
+    role: "", 
   };
 
   const AuthFormSchema = Yup.object({
@@ -34,12 +34,12 @@ const AuthForm = ({ isLogin }) => {
       .required("Password is required!"),
     role: isLogin
       ? null
-      : Yup.string().required("Role is required!"), // Role validation for registration
+      : Yup.string().required("Role is required!"), 
   });
 
   const submitHandler = async (values) => {
     setIsSubmitting(true);
-    const { email, password, username, role } = values; // Include role in registration
+    const { email, password, username, role } = values; 
     const END_POINT = isLogin
       ? `${import.meta.env.VITE_API}/login`
       : `${import.meta.env.VITE_API}/register`;
